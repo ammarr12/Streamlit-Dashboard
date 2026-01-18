@@ -2,9 +2,9 @@ import mysql.connector
 import streamlit as st
 mydb = mysql.connector.connect(
     
-    host = st.secrets["mysql"]["host"],
-    user = st.secrets["mysql"]["user"],
-    password = st.secrets["mysql"]["password"]
+    host = st.secrets["railway"]["host"],
+    user = st.secrets["railway"]["user"],
+    password = st.secrets["railway"]["password"]
 )
 
 cursor=mydb.cursor(buffered=True)
