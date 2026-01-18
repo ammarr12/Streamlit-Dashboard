@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 )
 
 cursor=mydb.cursor(buffered=True)
-cursor.execute("use coffe_cafe")
+cursor.execute(f"use {st.secrets['mysql']['database']}")
 cursor.execute("select * from dataset")
 
 results = cursor.fetchall()
