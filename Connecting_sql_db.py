@@ -2,9 +2,9 @@ import mysql.connector
 import streamlit as st
 mydb = mysql.connector.connect(
     
-    host = st.secrets["centerbeam.proxy.rlwy.net"]["host"],
-    user = st.secrets["centerbeam.proxy.rlwy.net"]["user"],
-    password = st.secrets["centerbeam.proxy.rlwy.net"]["password"]
+    host = st.secrets["mysql"]["host"],
+    user = st.secrets["mysql"]["user"],
+    password = st.secrets["mysql"]["password"]
 )
 
 cursor=mydb.cursor(buffered=True)
