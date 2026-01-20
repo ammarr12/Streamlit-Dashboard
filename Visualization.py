@@ -11,7 +11,7 @@ with col2:
     cl1,cl2=st.columns((1,4.5))
     with cl2:
         st.markdown("# Sales Perfromance By Product Type")
-    st.bar_chart(prodct_compar,x="Product Category",y="Revenue",width=18,x_label=" ",y_label=" ",color="#BF092F")
+    st.bar_chart(prodct_compar,x="Product Category",y="Revenue",x_label=" ",y_label=" ",color="#BF092F")
     
     cl11,cl12=st.columns((1,4.5))
     with cl12:
