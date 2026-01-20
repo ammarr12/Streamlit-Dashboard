@@ -1,6 +1,7 @@
-from Connecting_sql_db import dict1
+
 import pandas as pd
 
+dict1=pd.read_csv("dataset.csv")
 
 df=pd.DataFrame(dict1)
 
